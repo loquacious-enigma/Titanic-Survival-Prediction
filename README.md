@@ -32,15 +32,16 @@ Built using `sklearn.pipeline.Pipeline`, the components include:
 - **Numerical Pipeline**: mean imputation + standard scaling
 - **Categorical Pipeline**: mode imputation + one-hot encoding
 - **ColumnTransformer**: applies different pipelines to numeric and categorical data
-- **RandomForestClassifier**: final model with GridSearchCV
+- **RandomForestClassifier**: final model used in GridSearchCV
 
 ---
 
 ## 🔍 Model Selection & Evaluation
 
-- **Best Estimator** selected using 5-fold `GridSearchCV`
-- **Cross-validated** using `StratifiedKFold` with 10 splits
-- **Accuracy**: ~83.7%
+- **Model Used**: RandomForestClassifier (with class weighting, max depth, etc.)
+- **Hyperparameter Tuning**: Performed using 5-fold `GridSearchCV`
+- **Final Evaluation**: Cross-validated with `StratifiedKFold` (10 splits)
+- **Best Accuracy Achieved**: ~83.7%
 
 ---
 
@@ -78,7 +79,7 @@ cd titanic-ml-pipeline
 
 5. **Run the notebook**
 ```bash
-  jupyter notebook titanic_pipeline.ipynb
+  jupyter notebook Titanic_Survival_Prediction.ipynb
 ```
 
 ## 🧰 Tech Stack
