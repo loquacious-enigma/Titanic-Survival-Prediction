@@ -1,0 +1,13 @@
+```gitignore
+# Ignore Python cache and environment
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+venv/
+env/
+*.env
+
+# Ignore Jupyter runtime and system files
+.ipynb_checkpoints/
+.DS_Store
+*.log
